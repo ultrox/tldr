@@ -22,6 +22,10 @@
 
 `find {{root_path}} -path '{{**/lib/**/*.ext}}'`
 
+- Find but exclude directories [ unix School ](http://www.theunixschool.com/2012/07/find-command-15-examples-to-exclude.html)
+
+`find . -type d \( -name C -o -name temp \) -prune -o -name "*.c" -print`
+
 - Run a command for each file, use {} within the command to access the filename:
 
 `find {{root_path}} -name '{{*.ext}}' -exec {{wc -l {} }}\;`
