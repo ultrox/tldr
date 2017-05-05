@@ -2,9 +2,9 @@
 
 > Find files or directories under the given directory tree, recursively.
 
-- Find Hidden files in curent directory:
+- Find Hidden files in current directory:
 
-`find . -mindepth 1 -maxdepth 1 -name '.*'`
+`find . -mindepth 1 -maxdepth 1 -name {{'.*'}}`
 
 - Find files by extension:
 
@@ -21,10 +21,6 @@
 - Find files matching path pattern:
 
 `find {{root_path}} -path '{{**/lib/**/*.ext}}'`
-
-- Find but exclude directories [ unix School ](http://www.theunixschool.com/2012/07/find-command-15-examples-to-exclude.html)
-
-`find . -type d \( -name C -o -name temp \) -prune -o -name "*.c" -print`
 
 - Run a command for each file, use {} within the command to access the filename:
 
