@@ -17,3 +17,9 @@
 - Evaluate a javascript expression on the database:
 
 `mongo --eval '{{JSON.stringify(db.foo.findOne())}}' {{database}}`
+
+- Specify custom location for mongo deamon:
+
+mongod --dbpath {{/usr/local/mongo-db-data}}
+
+
