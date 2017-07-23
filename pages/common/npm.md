@@ -1,6 +1,6 @@
 # npm
 
-> JavaScript and Node.js package manager. Manage Node.js projects and their module dependencies.
+> JavaScript and Node.js package manager. Moded.
 
 - Suppress standard npm progress bar:
 
@@ -30,18 +30,7 @@
 
 `npm view {{module_name}}`
 
-- Download and install a module globally:
-
-`npm install -g {{module_name}}`
-
-- Download a given dependency for development purposes, and add it to the package.json:
-
-`npm install {{module_name}}@{{version}} --save-dev`
-
 - Uninstall a module:
 
 `npm uninstall {{module_name}}`
 
-- List a tree of installed modules:
-
-`npm list`
