@@ -10,3 +10,7 @@
 - Run individual tasks:
 
 `gulp {{task}} {{othertask}}`
+
+- Run gulp with arbitary file
+
+`gulp {{--gulpfile}} {{<gulp file path>}}`
