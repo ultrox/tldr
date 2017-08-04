@@ -34,3 +34,8 @@
 - Extract files matching a pattern:
 
 `tar xf {{source.tar}} --wildcards {{"*.html"}}`
+
+- Create archive with excluding multiple directories
+
+`tar cvfz {{ajcookie.tar.gz}} --exclude={{node_modules}} --exclude={{.git}} {{dir_archive}}`
+
