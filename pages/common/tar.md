@@ -30,3 +30,8 @@
 - List the contents of a tar file:
 
 `tar tvf {{source.tar}}`
+
+- Create archive with excluding multiple directories
+
+`tar cvfz {{ajcookie.tar.gz}} --exclude={{node_modules}} --exclude={{.git}} {{dir_archive}}`
+
