@@ -21,8 +21,11 @@
 
 - Run a specific version NodeJS REPL:
 
-`nvm run {{node_version}} --version`
 
 - Run app in a specific version of NodeJS:
 
 `nvm exec {{node_version}} node {{app.js}}`
+
+- List all available remote node version
+
+`nvm list -rk`
