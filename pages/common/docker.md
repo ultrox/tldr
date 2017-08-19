@@ -29,3 +29,10 @@
 - Remove a container:
 
 `docker rm {{container}}`
+
+- New interactive container with name supercool from image ubuntu 
+
+`docker run -it --name {{supercool}} {{ubuntu}}`
+
+- New detached container with maped ports
+`docker run -td --name {{supercool}} -p 8080:8080 {{ubuntu}}`
