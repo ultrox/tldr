@@ -26,10 +26,13 @@
 
 `docker container exec {{container}} {{command}}`
 
-- Remove a stopped container:
-
-`docker container rm {{container}}`
-
 - Fetch and follow the logs of a container:
 
 `docker container logs -f {{container}}`
+
+- New interactive container with name supercool from image ubuntu 
+
+`docker run -it --name {{supercool}} {{ubuntu}}`
+
+- New detached container with maped ports
+`docker run -td --name {{supercool}} -p 8080:8080 {{ubuntu}}`
