@@ -2,19 +2,19 @@
 
 > Manage Docker containers and images.
 
-- List currently running docker containers:
+- New interactive container with name supercool from image ubuntu 
 
-`docker ps`
-
-- List all docker containers (running and stopped):
-
-`docker ps -a`
+`docker run -it --name {{supercool}} {{ubuntu}}`
 
 - Start a container from an image, with a custom name:
 
 `docker run --name {{container_name}} {{image}}`
 
-- Start or stop an existing container:
+- New detached container with maped ports
+
+`docker run -td --name {{supercool}} -p 8080:8080 {{ubuntu}}`
+
+- List currently running docker containers:
 
 `docker {{start|stop}} {{container_name}}`
 
@@ -30,9 +30,6 @@
 
 `docker container logs -f {{container}}`
 
-- New interactive container with name supercool from image ubuntu 
+- Rename container
 
-`docker run -it --name {{supercool}} {{ubuntu}}`
-
-- New detached container with maped ports
-`docker run -td --name {{supercool}} -p 8080:8080 {{ubuntu}}`
+`docker rename {{oldname}} {{newname}}`
