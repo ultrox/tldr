@@ -14,9 +14,9 @@
 
 `npm update {{module_name}}`
 
-- List all packages install by user:
+- List all packages install by user globally:
 
-`npm list -depth=0`
+`npm list -depth=0 -g`
 
 - If you'd like to see all available (remote) versions for a particular package:
 

@@ -23,6 +23,7 @@
 
 `rsync -ru {{remote_host_name}}:{{remote_folder_location}} {{local_folder_location}}`
 
-- Transfer file over SSH and show progress:
+- Transfer file over SSH with options:
 
-`rsync -e ssh --progress {{remote_host_name}}:{{remote_file}} {{local_file}}`
+`rsync -e --progress "ssh -i ~/.ssh/jenkins.pem" {{ubuntu@52.59.232.101}}:{{/srv/example/path}} {{./local-path}}`
+
