@@ -6,6 +6,10 @@
 
 `find . -mindepth 1 -maxdepth 1 -name {{'.*'}}`
 
+- Find ever js files but Exclude directories
+ 
+`find . -not \( -path {{./path/to/dir}} -prune \) -not \( -path {{./part/dir}} -prune \) -name *.js`
+
 - Find files by extension:
 
 `find {{root_path}} -name '{{*.ext}}'`
