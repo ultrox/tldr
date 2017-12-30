@@ -10,9 +10,9 @@
  
 `find . -not \( -path {{./path/to/dir}} -prune \) -not \( -path {{./part/dir}} -prune \) -name *.js`
 
-- Find files by extension:
+- Find every file but not...:
 
-`find {{root_path}} -name '{{*.ext}}'`
+`find . -type f \( ! -name "sv*" \)`
 
 - Find files matching path pattern:
 
