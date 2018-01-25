@@ -6,6 +6,10 @@
 
 `npm set progress=false`
 
+- Update the npm itself
+ 
+`npm install -g npm@latest`
+
 - Find out which npm packages are outdated:
 
 `npm outdated`

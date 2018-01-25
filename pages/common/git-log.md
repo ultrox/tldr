@@ -18,6 +18,6 @@
 
 `git log --oneline --decorate --all --graph`
 
-- Show only commits whose messages include a given string (case-insensitively):
+- Show only commits whose messages include a given string (case-insensitively)::
 
 `git log -i --grep {{search_string}}`
