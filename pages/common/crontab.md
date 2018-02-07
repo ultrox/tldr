@@ -11,6 +11,10 @@
 
 `crontab -l`
 
+- Edit cron jobs for specific user
+ 
+`sudo crontab -u {{user}} -e`
+
 - Remove all cron jobs for the current user:
 
 `crontab -r`

@@ -13,3 +13,7 @@
 - Evaluate JavaScript by passing it in the command:
 
 `node -e "{{code}}"`
+
+- Debugg in browser
+
+`node inspect --inspect-brk {{file.js}}`
