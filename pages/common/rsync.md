@@ -27,3 +27,6 @@
 
 `rsync -e --progress "ssh -i ~/.ssh/jenkins.pem" {{ubuntu@52.59.232.101}}:{{/srv/example/path}} {{./local-path}}`
 
+- Transfer file over ssh with sudo:
+
+`rsync --rsync-path="sudo rsync" <LOCALFILE> USER@SERVER2:/root`
