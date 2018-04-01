@@ -7,6 +7,7 @@
 `docker run -it --name {{supercool}} {{ubuntu}}`
 
 - New detached container with maped ports
+
 `docker run -td --name {{supercool}} -p 8080:8080 {{ubuntu}}`
 
 - List currently running docker containers:
