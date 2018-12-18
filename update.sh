@@ -1,3 +1,12 @@
 #!/bin/sh
-#I'm calling this from aliases updating directly cache in ./tldr/cache, tldr update throws an error when use custom repo
-git pull origin master
+set -e
+
+if git remote get-url upstream; then
+  echo 'no need'
+else
+  git remote add upstream https://github.com/tldr-pages/tldr
+fi
+
+# in this case 'theirs' is 'mine' :), HEAD is on upstream so 'theirs' is
+# acutally mine
+git rebase -s recursive -X theirs upstream/master
