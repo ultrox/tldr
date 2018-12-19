@@ -2,9 +2,10 @@
 set -e
 
 if git remote get-url upstream; then
-  echo 'no need'
+  git fetch upstream master
 else
   git remote add upstream https://github.com/tldr-pages/tldr
+  git fetch upstream master
 fi
 
 # in this case 'theirs' is 'mine' :), HEAD is on upstream so 'theirs' is

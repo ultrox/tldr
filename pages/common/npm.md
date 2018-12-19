@@ -1,34 +1,23 @@
 # npm
 
-> JavaScript and Node.js package manager. Moded.
+> JavaScript and Node.js package manager.
+> Manage Node.js projects and their module dependencies.
 
-- Suppress standard npm progress bar:
+- Download and install a module globally:
 
-`npm set progress=false`
+`npm install -g {{module_name}}`
 
-- Find out which npm packages are outdated:
+- Download all dependencies referenced in package.json:
 
-`npm outdated`
+`npm install`
 
-- Update npm packages:
+- Download a given dependency required for the application to run, and add it to the package.json:
 
-`npm update {{module_name}}`
+`npm install {{module_name}}@{{version}} --save`
 
-- List all packages install by user globally:
+- Download a given dependency for development purposes, and add it to the package.json:
 
-`npm list -depth=0 -g`
-
-- If you'd like to see all available (remote) versions for a particular package:
-
-`npm view {{module_name}} versions`
-
-- Search for npm packages:
-
-`npm search {{module_name}}`
-
-- View details of a npm package:
-
-`npm view {{module_name}}`
+`npm install {{module_name}}@{{version}} --save-dev`
 
 - Uninstall a module:
 
@@ -41,3 +30,7 @@
 - List top-level globally installed modules:
 
 `npm list -g --depth={{0}}`
+
+- Interactively create a package.json file:
+
+`npm init`
